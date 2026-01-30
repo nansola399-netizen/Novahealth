@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Enterprise Base Colors */
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Premium Medical Blue */
+    --primary: 215 85% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Calming Mint/Teal */
+    --secondary: 165 60% 40%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 98%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 215 85% 45%;
+
+    --emergency: 0 85% 60%;
+    --emergency-foreground: 0 0% 100%;
+
+    --radius: 1rem;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Utilities without @apply to avoid build crashes */
+.glass-card {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.02),
+    0 2px 4px -1px rgba(0, 0, 0, 0.02),
+    0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+}
+
+.glass-card-hover {
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow:
+    0 20px 40px -6px rgba(0, 0, 0, 0.06),
+    0 8px 16px -6px rgba(0, 0, 0, 0.04),
+    0 0 0 1px rgba(255, 255, 255, 0.8) inset;
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(to right, rgba(15, 23, 42, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.text-gradient-premium {
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
