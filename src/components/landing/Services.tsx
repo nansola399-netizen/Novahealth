@@ -115,7 +115,7 @@ export const Services = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 tracking-tight">
             Comprehensive <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Medical Services</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto font-normal leading-relaxed">
             We provide a 360-degree healthcare ecosystem designed around your needs, from emergency response to confident recovery.
           </p>
         </motion.div>
@@ -151,7 +151,7 @@ export const Services = () => {
                     <h3 className="font-bold text-xl text-foreground mb-3 tracking-tight">
                       {service.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed font-medium opacity-80">
+                    <p className="text-sm text-slate-600 leading-relaxed font-medium">
                       {service.description}
                     </p>
                   </div>

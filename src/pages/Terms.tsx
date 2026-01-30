@@ -23,10 +23,10 @@ const Terms = () => {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
                             Terms & <span className="text-primary">Services</span>
                         </h1>
-                        <p className="text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-light">
+                        <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-normal">
                             Please read these terms carefully before using the Nova Health Solutions platform.
                         </p>
-                        <p className="mt-4 text-slate-400 text-sm">
+                        <p className="mt-4 text-slate-500 text-sm">
                             Last Updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
                         </p>
                     </motion.div>
@@ -96,7 +96,7 @@ const Terms = () => {
                                     No Medical Advice or Guarantee
                                 </h2>
                                 <div className="bg-amber-50 p-6 rounded-2xl border border-amber-100">
-                                    <p className="text-amber-900/80">
+                                    <p className="text-amber-900">
                                         Nova Health Solutions does not provide medical advice, diagnosis, or treatment.
                                         <br /><br />
                                         We do not guarantee the accuracy, effectiveness, quality, pricing, discounts, or outcomes of any healthcare service listed on the platform.

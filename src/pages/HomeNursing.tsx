@@ -28,7 +28,7 @@ const HomeNursing = () => {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
                             Home Nursing <span className="text-emerald-600">Care Discovery</span>
                         </h1>
-                        <p className="text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-light">
+                        <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-normal">
                             Nova Health Solutions assists you in discovering trained home nursing professionals who provide dedicated medical and non-medical support in the comfort of your home.
                         </p>
                     </motion.div>
@@ -56,7 +56,7 @@ const HomeNursing = () => {
                                     <div key={i} className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:border-emerald-100 transition-colors">
                                         <item.icon className="w-8 h-8 text-emerald-500 mb-4" />
                                         <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
-                                        <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+                                        <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
                                     </div>
                                 ))}
                             </div>
@@ -84,7 +84,7 @@ const HomeNursing = () => {
 
                         {/* Disclaimer */}
                         <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
-                            <p className="text-slate-500 text-sm italic text-center">
+                            <p className="text-slate-600 text-sm italic text-center">
                                 "Nova Health Solutions does not guarantee service quality, outcomes, or availability of home nursing services. Services are provided by independent professionals or agencies."
                             </p>
                         </div>
@@ -98,7 +98,7 @@ const HomeNursing = () => {
                 <div className="container mx-auto px-6 text-center max-w-2xl relative z-10">
                     <HeartHandshake className="w-12 h-12 text-emerald-400 mx-auto mb-6" />
                     <h2 className="text-3xl font-bold mb-4">Home Nursing Features – Coming Soon</h2>
-                    <p className="text-slate-300 mb-8 text-lg font-light">
+                    <p className="text-slate-200 mb-8 text-lg font-normal">
                         Join our Early Access list to be notified when our comprehensive home care discovery platform launches.
                     </p>
                     <Button

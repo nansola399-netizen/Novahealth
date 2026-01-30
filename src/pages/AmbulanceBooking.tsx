@@ -28,7 +28,7 @@ const AmbulanceBooking = () => {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
                             Ambulance <span className="text-blue-600">Booking Support</span>
                         </h1>
-                        <p className="text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-light">
+                        <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-normal">
                             Nova Health Solutions assists you in discovering nearby ambulance services to support timely medical transportation during emergencies or planned transfers.
                         </p>
                     </motion.div>
@@ -55,7 +55,7 @@ const AmbulanceBooking = () => {
                                 ].map((item, i) => (
                                     <div key={i} className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:border-blue-100 transition-colors">
                                         <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
-                                        <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+                                        <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
                                     </div>
                                 ))}
                             </div>
@@ -66,14 +66,14 @@ const AmbulanceBooking = () => {
                             <div className="bg-slate-50 rounded-3xl p-8 border border-slate-100">
                                 <MapPin className="w-8 h-8 text-blue-600 mb-4" />
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">Discovery Platform</h3>
-                                <p className="text-slate-500 leading-relaxed text-sm">
+                                <p className="text-slate-600 leading-relaxed text-sm">
                                     We help you identify available ambulance options based on your location. Nova Health Solutions does not own, operate, or manage the ambulances directly.
                                 </p>
                             </div>
                             <div className="bg-slate-50 rounded-3xl p-8 border border-slate-100">
                                 <Shield className="w-8 h-8 text-blue-600 mb-4" />
                                 <h3 className="text-xl font-bold text-slate-900 mb-3">User Guidance</h3>
-                                <p className="text-slate-500 leading-relaxed text-sm">
+                                <p className="text-slate-600 leading-relaxed text-sm">
                                     Users are encouraged to evaluate service availability and urgency independently. In life-threatening situations, always contact national emergency numbers first.
                                 </p>
                             </div>
@@ -99,7 +99,7 @@ const AmbulanceBooking = () => {
                 <div className="container mx-auto px-6 text-center max-w-2xl relative z-10">
                     <Clock className="w-12 h-12 text-blue-400 mx-auto mb-6" />
                     <h2 className="text-3xl font-bold mb-4">Mobile App Launch Coming Soon</h2>
-                    <p className="text-slate-300 mb-8 text-lg font-light">
+                    <p className="text-slate-200 mb-8 text-lg font-normal">
                         Get Early Access to our advanced ambulance discovery features, including real-time tracking and instant provider connection.
                     </p>
                     <Button

@@ -8,13 +8,13 @@ export const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="bg-slate-50/80 backdrop-blur-sm text-slate-600 py-24 border-t border-slate-200/60">
+    <footer id="contact" className="bg-slate-50/80 backdrop-blur-sm text-slate-700 py-24 border-t border-slate-200/60">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-20">
           {/* About */}
           <div className="space-y-8">
             <h5 className="font-bold text-lg tracking-tight text-slate-900">Nova Health Solutions PVT LTD.</h5>
-            <p className="text-slate-500 text-sm leading-relaxed max-w-xs font-light tracking-wide">
+            <p className="text-slate-600 text-sm leading-relaxed max-w-xs font-normal tracking-wide">
               Nova Health Solutions is an integrated healthcare service
               marketplace connecting you with verified medical services across
               India.
@@ -28,7 +28,7 @@ export const Footer = () => {
           {/* Services */}
           <div>
             <h4 className="font-bold text-slate-900 text-sm uppercase tracking-wider mb-8">Services</h4>
-            <ul className="space-y-4 text-slate-500 text-sm font-light">
+            <ul className="space-y-4 text-slate-600 text-sm font-normal">
               <li>
                 <Link
                   to="/doctor-consultations"
@@ -80,7 +80,7 @@ export const Footer = () => {
           {/* Quick Links */}
           <div>
             <h4 className="font-bold text-slate-900 text-sm uppercase tracking-wider mb-8">Quick Links</h4>
-            <ul className="space-y-4 text-slate-500 text-sm font-light">
+            <ul className="space-y-4 text-slate-600 text-sm font-normal">
               <li>
                 <Link
                   to="/about-us"
@@ -132,7 +132,7 @@ export const Footer = () => {
           {/* Contact */}
           <div>
             <h4 className="font-bold text-slate-900 text-sm uppercase tracking-wider mb-8">Contact Us</h4>
-            <ul className="space-y-6 text-slate-500 text-sm">
+            <ul className="space-y-6 text-slate-600 text-sm">
               <li className="flex items-start gap-4 group">
                 <div className="p-2.5 bg-white rounded-xl shadow-[0_2px_8px_-2px_rgba(0,0,0,0.05)] group-hover:shadow-[0_4px_12px_-2px_rgba(0,0,0,0.08)] transition-all border border-slate-100">
                   <MapPin className="h-4 w-4 text-primary" />
@@ -157,7 +157,7 @@ export const Footer = () => {
 
         {/* Disclaimer & Copyright */}
         <div className="border-t border-slate-200/60 pt-10 mt-10">
-          <p className="text-xs text-slate-400 mb-8 leading-relaxed max-w-5xl font-light tracking-wide">
+          <p className="text-xs text-slate-500 mb-8 leading-relaxed max-w-5xl font-normal tracking-wide">
             <strong className="text-slate-600 font-medium">Disclaimer:</strong> Nova Health Solutions is a healthcare
             diagnosis or treatment. All medical services are provided by
             independent, verified healthcare providers.
@@ -166,7 +166,7 @@ export const Footer = () => {
               Nova Health Solutions Pvt. Ltd. is a registered private limited company operating in India.
             </span>
           </p>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-500 font-light">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-600 font-normal">
             <p>
               © {new Date().getFullYear()} Nova Health Solutions. All rights
               reserved.

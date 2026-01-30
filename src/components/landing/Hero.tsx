@@ -37,7 +37,7 @@ export const Hero = () => {
               Complete Healthcare.{" "}
               <span className="block text-gradient-premium mt-2 pb-2">One Platform.</span>
             </h1>
-            <p className="text-xl text-muted-foreground mb-10 max-w-lg mx-auto lg:mx-0 font-light leading-relaxed tracking-tight">
+            <p className="text-xl text-slate-600 mb-10 max-w-lg mx-auto lg:mx-0 font-normal leading-relaxed tracking-tight">
               Connect with top-rated doctors, book instant ambulances, and manage your health records - all in one secure place.
             </p>
 
@@ -45,7 +45,7 @@ export const Hero = () => {
               <UnifiedSearchBar />
             </div>
 
-            <div className="mt-16 flex items-center justify-center lg:justify-start gap-10 text-sm font-medium text-muted-foreground/80">
+            <div className="mt-16 flex items-center justify-center lg:justify-start gap-10 text-sm font-medium text-slate-600">
               <div className="flex items-center gap-2.5">
                 <div className="p-1.5 rounded-full bg-blue-50 text-secondary">
                   <ShieldCheck className="w-4 h-4" />

@@ -55,7 +55,7 @@ const HowItWorks = () => {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
                             How Nova Health <span className="text-primary">Works</span>
                         </h1>
-                        <p className="text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-light">
+                        <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-normal">
                             Simple healthcare discovery from home. We bridge the gap between you and verified medical services.
                         </p>
                     </motion.div>
@@ -80,7 +80,7 @@ const HowItWorks = () => {
                                 </div>
                                 <div className="flex-1 bg-white p-6 md:p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
                                     <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-3">{step.title}</h3>
-                                    <p className="text-slate-500 leading-relaxed font-light">{step.desc}</p>
+                                    <p className="text-slate-600 leading-relaxed">{step.desc}</p>
                                 </div>
                             </motion.div>
                         ))}
@@ -105,7 +105,7 @@ const HowItWorks = () => {
                 <div className="container mx-auto px-6 text-center max-w-2xl relative z-10">
                     <Smartphone className="w-12 h-12 text-primary mx-auto mb-6" />
                     <h2 className="text-3xl font-bold mb-4">Mobile App Launching Soon</h2>
-                    <p className="text-slate-300 mb-10 text-lg font-light">
+                    <p className="text-slate-200 mb-10 text-lg font-normal">
                         Experience seamless healthcare discovery on Android and iOS. Join the waitlist today.
                     </p>
                     <Button

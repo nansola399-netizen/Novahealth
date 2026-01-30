@@ -23,10 +23,10 @@ const PrivacyPolicy = () => {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
                             Privacy <span className="text-primary">Policy</span>
                         </h1>
-                        <p className="text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-light">
+                        <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-normal">
                             Your privacy is important to us. We are committed to protecting your personal information and ensuring transparency.
                         </p>
-                        <p className="mt-4 text-slate-400 text-sm">
+                        <p className="mt-4 text-slate-500 text-sm">
                             Last Updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
                         </p>
                     </motion.div>

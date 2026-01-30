@@ -28,7 +28,7 @@ const EmergencyServices = () => {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
                             Emergency <span className="text-red-600">Services & Support</span>
                         </h1>
-                        <p className="text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-light">
+                        <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-normal">
                             Nova Health Solutions provides guidance to help you identify nearby emergency healthcare services during urgent medical situations.
                         </p>
                     </motion.div>
@@ -45,7 +45,7 @@ const EmergencyServices = () => {
                             <div className="absolute top-0 right-0 w-64 h-64 bg-red-50 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2" />
                             <div className="relative z-10">
                                 <h2 className="text-2xl font-bold text-slate-900 mb-4">Overview</h2>
-                                <p className="text-slate-500 leading-relaxed text-lg font-light">
+                                <p className="text-slate-600 leading-relaxed text-lg font-normal">
                                     Our platform focuses on awareness, accessibility, and faster discovery of nearby emergency options. We aim to reduce the panic in critical moments by providing clear, accessible information about where to find help.
                                 </p>
                             </div>
@@ -67,7 +67,7 @@ const EmergencyServices = () => {
                                     <div key={i} className="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:shadow-md transition-shadow">
                                         <item.icon className="w-8 h-8 text-red-500 mb-4" />
                                         <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
-                                        <p className="text-slate-500 text-sm">{item.desc}</p>
+                                        <p className="text-slate-600 text-sm">{item.desc}</p>
                                     </div>
                                 ))}
                             </div>
@@ -83,21 +83,21 @@ const EmergencyServices = () => {
                                     <MapPin className="w-5 h-5 text-blue-600" />
                                 </div>
                                 <h3 className="font-bold text-slate-900 mb-2">Location Awareness</h3>
-                                <p className="text-sm text-slate-500">Auto-identification of services in your immediate vicinity.</p>
+                                <p className="text-sm text-slate-600">Auto-identification of services in your immediate vicinity.</p>
                             </div>
                             <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
                                 <div className="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center mb-4">
                                     <Activity className="w-5 h-5 text-blue-600" />
                                 </div>
                                 <h3 className="font-bold text-slate-900 mb-2">Resource Visibility</h3>
-                                <p className="text-sm text-slate-500">Real-time information on what emergency resources are available.</p>
+                                <p className="text-sm text-slate-600">Real-time information on what emergency resources are available.</p>
                             </div>
                             <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
                                 <div className="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center mb-4">
                                     <Phone className="w-5 h-5 text-blue-600" />
                                 </div>
                                 <h3 className="font-bold text-slate-900 mb-2">Clear Instructions</h3>
-                                <p className="text-sm text-slate-500">Step-by-step guidance on how to seek urgent professional care.</p>
+                                <p className="text-sm text-slate-600">Step-by-step guidance on how to seek urgent professional care.</p>
                             </div>
                         </div>
 
@@ -125,7 +125,7 @@ const EmergencyServices = () => {
                         <Phone className="w-8 h-8 text-red-600" />
                     </div>
                     <h2 className="text-3xl font-bold text-slate-900 mb-4">Emergency Services – Coming Soon on Mobile App</h2>
-                    <p className="text-slate-500 mb-8">
+                    <p className="text-slate-600 mb-8">
                         We are working hard to bring you a dedicated emergency response system directly on your phone.
                     </p>
                     <Button

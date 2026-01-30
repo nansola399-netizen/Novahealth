@@ -49,7 +49,7 @@ const GetEarlyAccess = () => {
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
                                 Get <span className="text-primary">Early Access</span> to the Future of Healthcare
                             </h1>
-                            <p className="text-xl text-slate-500 mb-10 leading-relaxed font-light">
+                            <p className="text-xl text-slate-600 mb-10 leading-relaxed font-normal">
                                 Nova Health Solutions mobile app is coming soon. Join the waitlist to be the first to experience seamless healthcare discovery in your city.
                             </p>
 
@@ -65,7 +65,7 @@ const GetEarlyAccess = () => {
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-slate-900">{item.title}</h3>
-                                            <p className="text-slate-500 text-sm">{item.desc}</p>
+                                            <p className="text-slate-600 text-sm">{item.desc}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -85,7 +85,7 @@ const GetEarlyAccess = () => {
                                             <CheckCircle2 className="w-10 h-10 text-green-600" />
                                         </div>
                                         <h3 className="text-2xl font-bold text-slate-900 mb-2">You're on the list!</h3>
-                                        <p className="text-slate-500 mb-8">Thank you for joining. We'll be in touch soon.</p>
+                                        <p className="text-slate-600 mb-8">Thank you for joining. We'll be in touch soon.</p>
                                         <Button
                                             variant="outline"
                                             onClick={() => setIsSuccess(false)}
@@ -98,7 +98,7 @@ const GetEarlyAccess = () => {
                                     <>
                                         <div className="mb-8">
                                             <h3 className="text-2xl font-bold text-slate-900 mb-2">Join the Waitlist</h3>
-                                            <p className="text-slate-500 text-sm">Fill in your details to reserve your spot.</p>
+                                            <p className="text-slate-600 text-sm">Fill in your details to reserve your spot.</p>
                                         </div>
 
                                         <form onSubmit={handleSubmit} className="space-y-4">
@@ -133,7 +133,7 @@ const GetEarlyAccess = () => {
 
                                         <div className="mt-6 flex items-start gap-3 p-4 bg-slate-50 rounded-xl">
                                             <Lock className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
-                                            <p className="text-xs text-slate-400 leading-relaxed">
+                                            <p className="text-xs text-slate-500 leading-relaxed">
                                                 <span className="font-semibold text-slate-600">Privacy Guarantee:</span> Your information is safe with us. We will only use this to notify you about the app launch and key platform updates. No spam, ever.
                                             </p>
                                         </div>

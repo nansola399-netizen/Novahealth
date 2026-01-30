@@ -28,7 +28,7 @@ const LabDiagnostics = () => {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
                             Lab & <span className="text-teal-600">Diagnostics Discovery</span>
                         </h1>
-                        <p className="text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-light">
+                        <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-normal">
                             Nova Health Solutions helps you explore diagnostic laboratories and medical testing services to support preventive care, diagnosis, and accurate health monitoring.
                         </p>
                     </motion.div>
@@ -70,21 +70,21 @@ const LabDiagnostics = () => {
                             <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                                 <Search className="w-8 h-8 text-teal-600 mb-4" />
                                 <h3 className="font-bold text-slate-900 mb-2">Smart Discovery</h3>
-                                <p className="text-slate-500 text-sm leading-relaxed">
+                                <p className="text-slate-600 text-sm leading-relaxed">
                                     Easily locate nearby accredited labs and diagnostic centers based on your specific testing needs.
                                 </p>
                             </div>
                             <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                                 <FileText className="w-8 h-8 text-teal-600 mb-4" />
                                 <h3 className="font-bold text-slate-900 mb-2">Service Comparison</h3>
-                                <p className="text-slate-500 text-sm leading-relaxed">
+                                <p className="text-slate-600 text-sm leading-relaxed">
                                     Compare available diagnostic services and view informational pricing to make informed decisions.
                                 </p>
                             </div>
                             <div className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                                 <Clock className="w-8 h-8 text-teal-600 mb-4" />
                                 <h3 className="font-bold text-slate-900 mb-2">Timelines</h3>
-                                <p className="text-slate-500 text-sm leading-relaxed">
+                                <p className="text-slate-600 text-sm leading-relaxed">
                                     Get informational visibility into general report availability timelines for various tests.
                                 </p>
                             </div>
@@ -95,7 +95,7 @@ const LabDiagnostics = () => {
                             <Info className="w-6 h-6 text-teal-400 shrink-0 mt-1" />
                             <div>
                                 <h4 className="font-bold text-white mb-2 text-lg">Data Transparency</h4>
-                                <p className="text-sm leading-relaxed opacity-90">
+                                <p className="text-sm leading-relaxed">
                                     Nova Health Solutions does not control test accuracy, reporting timelines, or pricing. All diagnostic services are performed and managed by independent accredited laboratories. We act solely as a discovery platform to connect you with these service providers.
                                 </p>
                             </div>
@@ -113,7 +113,7 @@ const LabDiagnostics = () => {
                             <Microscope className="w-8 h-8 text-teal-600 -rotate-3" />
                         </div>
                         <h2 className="text-3xl font-bold text-slate-900 mb-4">Diagnostic Discovery – coming to your pocket</h2>
-                        <p className="text-slate-500 mb-10 text-lg">
+                        <p className="text-slate-600 mb-10 text-lg">
                             Our mobile app will feature advanced lab discovery, digital report organization, and seamless home collection booking awareness.
                         </p>
                         <Button

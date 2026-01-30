@@ -28,7 +28,7 @@ const AboutUs = () => {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
                             About <span className="text-blue-600">Nova Health Solutions</span>
                         </h1>
-                        <p className="text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-light">
+                        <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-normal">
                             An integrated healthcare guidance platform designed to simplify healthcare discovery for individuals and families across India.
                         </p>
                     </motion.div>
@@ -53,7 +53,7 @@ const AboutUs = () => {
                                     <h4 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
                                         <Globe className="w-5 h-5 text-blue-600" /> Our Role
                                     </h4>
-                                    <p className="text-sm text-slate-500 leading-relaxed">
+                                    <p className="text-base text-slate-600 leading-relaxed">
                                         We act specifically as a facilitation and guidance platform. We do not provide medical diagnosis, treatment, or healthcare services directly. All medical services are delivered by independent third-party providers.
                                     </p>
                                 </div>
@@ -63,7 +63,7 @@ const AboutUs = () => {
                                 <div className="text-center relative z-10">
                                     <Shield className="w-16 h-16 text-blue-600 mx-auto mb-4" />
                                     <h3 className="text-2xl font-bold text-slate-900 mb-2">Trusted Guidance</h3>
-                                    <p className="text-slate-500 text-sm">Empowering informed health decisions</p>
+                                    <p className="text-slate-600 text-sm">Empowering informed health decisions</p>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +82,7 @@ const AboutUs = () => {
                                         <CheckCircle className="w-6 h-6 text-green-500 shrink-0 mt-1" />
                                         <div>
                                             <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
-                                            <p className="text-slate-500 text-sm">{item.desc}</p>
+                                            <p className="text-slate-600 text-sm">{item.desc}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -95,7 +95,7 @@ const AboutUs = () => {
                             <div className="relative z-10">
                                 <Eye className="w-12 h-12 text-blue-400 mx-auto mb-6" />
                                 <h2 className="text-2xl md:text-3xl font-bold mb-4">Our Vision</h2>
-                                <p className="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-light">
+                                <p className="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal">
                                     "To make healthcare access more informed, faster, and easier for everyone across India, bridging the gap between patients and quality care."
                                 </p>
                             </div>
@@ -123,7 +123,7 @@ const AboutUs = () => {
                 <div className="container mx-auto px-6 text-center max-w-2xl">
                     <Smartphone className="w-12 h-12 text-blue-600 mx-auto mb-6" />
                     <h2 className="text-3xl font-bold text-slate-900 mb-4">Healthcare in your pocket</h2>
-                    <p className="text-slate-500 mb-10 text-lg">
+                    <p className="text-slate-600 mb-10 text-lg">
                         Our Android and iOS apps are launching soon. Be the first to experience seamless healthcare discovery.
                     </p>
                     <Button

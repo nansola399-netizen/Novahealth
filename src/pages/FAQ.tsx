@@ -107,7 +107,7 @@ const FAQ = () => {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight leading-tight">
                             Frequently Asked <span className="text-primary">Questions</span>
                         </h1>
-                        <p className="text-xl text-slate-500 max-w-3xl mx-auto leading-relaxed font-light">
+                        <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-normal">
                             Common questions about Nova Health Solutions and how we help you find the best care.
                         </p>
                     </motion.div>
@@ -133,7 +133,7 @@ const FAQ = () => {
                                             <AccordionTrigger className="text-left text-slate-700 hover:text-primary hover:no-underline text-lg">
                                                 {item.question}
                                             </AccordionTrigger>
-                                            <AccordionContent className="text-slate-500 leading-relaxed text-base pt-2 font-light">
+                                            <AccordionContent className="text-slate-600 leading-relaxed text-base pt-2 font-normal">
                                                 {item.answer}
                                             </AccordionContent>
                                         </AccordionItem>
@@ -149,7 +149,7 @@ const FAQ = () => {
             <section className="py-20 bg-slate-50 border-t border-slate-200">
                 <div className="container mx-auto px-6 max-w-4xl text-center">
                     <h2 className="text-3xl font-bold text-slate-900 mb-6">Still have questions?</h2>
-                    <p className="text-slate-500 mb-10 text-lg">
+                    <p className="text-slate-600 mb-10 text-lg">
                         We're here to help. Reach out to our support team or join our early access list for updates.
                     </p>
 
