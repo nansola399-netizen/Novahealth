@@ -105,6 +105,19 @@ const AboutUs = () => {
                 </div>
             </section>
 
+            {/* Company Transparency */}
+            <section className="py-16 bg-slate-50 border-y border-slate-100">
+                <div className="container mx-auto px-6 max-w-4xl text-center">
+                    <div className="inline-flex items-center justify-center p-3 bg-white rounded-full shadow-sm mb-6">
+                        <Shield className="w-6 h-6 text-slate-400" />
+                    </div>
+                    <h2 className="text-2xl font-bold text-slate-900 mb-4">Company Transparency</h2>
+                    <p className="text-slate-600 leading-relaxed max-w-2xl mx-auto">
+                        <span className="font-semibold text-slate-900">Nova Health Solutions Private Limited</span> is a registered entity in India, committed to ethical healthcare facilitation. We operate with full professional accountability and strict adherence to data privacy and service standards.
+                    </p>
+                </div>
+            </section>
+
             {/* Early Access CTA */}
             <section className="py-24 bg-gradient-to-b from-white to-blue-50/30">
                 <div className="container mx-auto px-6 text-center max-w-2xl">

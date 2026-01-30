@@ -159,9 +159,12 @@ export const Footer = () => {
         <div className="border-t border-slate-200/60 pt-10 mt-10">
           <p className="text-xs text-slate-400 mb-8 leading-relaxed max-w-5xl font-light tracking-wide">
             <strong className="text-slate-600 font-medium">Disclaimer:</strong> Nova Health Solutions is a healthcare
-            service facilitation platform and does not provide medical
             diagnosis or treatment. All medical services are provided by
             independent, verified healthcare providers.
+            <br className="mt-4 block" />
+            <span className="mt-4 block opacity-80">
+              Nova Health Solutions Pvt. Ltd. is a registered private limited company operating in India.
+            </span>
           </p>
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-500 font-light">
             <p>
