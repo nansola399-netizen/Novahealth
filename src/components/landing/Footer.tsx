@@ -120,6 +120,12 @@ export const Footer = () => {
                   Terms of Service
                 </Link>
               </li>
+              <li>
+                <Link to="/faq" className="hover:text-primary hover:translate-x-1.5 transition-all duration-300 flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-slate-300" />
+                  FAQ
+                </Link>
+              </li>
             </ul>
           </div>
 
