@@ -13,7 +13,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-20">
           {/* About */}
           <div className="space-y-8">
-            <h5 className="font-bold text-lg tracking-tight text-slate-900">Nova Health Solutions</h5>
+            <h5 className="font-bold text-lg tracking-tight text-slate-900">Nova Health Solutions PVT LTD.</h5>
             <p className="text-slate-500 text-sm leading-relaxed max-w-xs font-light tracking-wide">
               Nova Health Solutions is an integrated healthcare service
               marketplace connecting you with verified medical services across
