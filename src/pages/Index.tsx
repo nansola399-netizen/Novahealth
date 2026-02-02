@@ -20,6 +20,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header onEmergencyClick={() => setEmergencyModalOpen(true)} />
       <main>
+        <MobileAppSection />
         <Hero />
         <Services />
         <HowItWorks />
@@ -29,7 +30,6 @@ const Index = () => {
         <LeadCaptureForm />
         <TrustSection />
       </main>
-      <MobileAppSection />
       <Footer />
       <FloatingEmergencyBtn onEmergencyClick={() => setEmergencyModalOpen(true)} />
       <EmergencyModal
