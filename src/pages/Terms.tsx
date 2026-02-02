@@ -231,8 +231,8 @@ const Terms = () => {
                                     16. Contact Information
                                 </h2>
                                 <p className="mb-4">For any legal or support queries related to these Terms, users may contact:</p>
-                                <a href="mailto:support@novahealthsolutions.com" className="text-primary font-medium hover:underline hover:text-blue-700 transition-colors">
-                                    support@novahealthsolutions.com
+                                <a href="mailto:support@novahealthsolution.com" className="text-primary font-medium hover:underline hover:text-blue-700 transition-colors">
+                                    support@novahealthsolution.com
                                 </a>
                             </section>
 

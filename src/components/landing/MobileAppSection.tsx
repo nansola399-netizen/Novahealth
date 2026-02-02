@@ -113,7 +113,7 @@ export const MobileAppSection = ({ onJoinWaitlist }: MobileAppSectionProps) => {
                         <motion.div
                             animate={{ scale: [0.8, 1.2, 0.8], opacity: [0.3, 0.5, 0.3] }}
                             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-blue-500/20 rounded-full blur-[80px] -z-10"
+                            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-blue-50/20 rounded-full blur-[80px] -z-10"
                         />
                     </div>
 

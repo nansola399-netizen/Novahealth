@@ -154,7 +154,7 @@ const FAQ = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                        <Button variant="outline" className="h-12 px-8 rounded-full bg-white hover:bg-slate-100 text-slate-700 border-slate-200" onClick={() => window.location.href = 'mailto:support@novahealthsolutions.com'}>
+                        <Button variant="outline" className="h-12 px-8 rounded-full bg-white hover:bg-slate-100 text-slate-700 border-slate-200" onClick={() => window.location.href = 'mailto:support@novahealthsolution.com'}>
                             <Mail className="w-4 h-4 mr-2" />
                             Contact Support
                         </Button>

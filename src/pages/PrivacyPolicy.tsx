@@ -119,8 +119,8 @@ const PrivacyPolicy = () => {
                                 7. Contact Information
                             </h2>
                             <p className="mb-4">If you have any questions or concern regarding this Privacy Policy or your data, please contact us:</p>
-                            <a href="mailto:privacy@novahealthsolutions.com" className="text-primary font-medium hover:underline hover:text-blue-700 transition-colors">
-                                privacy@novahealthsolutions.com
+                            <a href="mailto:privacy@novahealthsolution.com" className="text-primary font-medium hover:underline hover:text-blue-700 transition-colors">
+                                privacy@novahealthsolution.com
                             </a>
                         </section>
 
