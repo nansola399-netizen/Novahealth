@@ -10,7 +10,11 @@ import {
 import { motion } from "framer-motion";
 import mobileAppShowcase from "@/assets/nova_app_showcase.png";
 
-export const MobileAppSection = () => {
+interface MobileAppSectionProps {
+    onJoinWaitlist?: () => void;
+}
+
+export const MobileAppSection = ({ onJoinWaitlist }: MobileAppSectionProps) => {
     return (
         <section className="relative py-24 md:py-32 bg-white overflow-hidden">
 
@@ -68,7 +72,11 @@ export const MobileAppSection = () => {
                         </div>
 
                         <div className="mt-8 flex items-center gap-4">
-                            <Button variant="link" className="text-blue-600 p-0 h-auto font-medium hover:text-blue-700 text-lg">
+                            <Button
+                                variant="link"
+                                className="text-blue-600 p-0 h-auto font-medium hover:text-blue-700 text-lg"
+                                onClick={onJoinWaitlist}
+                            >
                                 Join the Waitlist <ArrowRight className="w-5 h-5 ml-1" />
                             </Button>
                         </div>

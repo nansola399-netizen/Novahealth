@@ -11,16 +11,18 @@ import { TrustSection } from "@/components/landing/TrustSection";
 import { MobileAppSection } from "@/components/landing/MobileAppSection";
 import { Footer } from "@/components/landing/Footer";
 import { EmergencyModal } from "@/components/landing/EmergencyModal";
+import { EarlyAccessModal } from "@/components/landing/EarlyAccessModal";
 import { FloatingEmergencyBtn } from "@/components/landing/FloatingEmergencyBtn";
 
 const Index = () => {
   const [emergencyModalOpen, setEmergencyModalOpen] = useState(false);
+  const [earlyAccessOpen, setEarlyAccessOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-background">
       <Header onEmergencyClick={() => setEmergencyModalOpen(true)} />
       <main>
-        <MobileAppSection />
+        <MobileAppSection onJoinWaitlist={() => setEarlyAccessOpen(true)} />
         <Hero />
         <Services />
         <HowItWorks />
@@ -36,7 +38,13 @@ const Index = () => {
         open={emergencyModalOpen}
         onOpenChange={setEmergencyModalOpen}
       />
+      <EarlyAccessModal
+        open={earlyAccessOpen}
+        onOpenChange={setEarlyAccessOpen}
+      />
     </div>
+  );
+    </div >
   );
 };
 
