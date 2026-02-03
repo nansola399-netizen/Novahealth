@@ -9,8 +9,9 @@ export const Hero = () => {
     <section className="relative min-h-[95vh] flex items-center pt-32 pb-20 overflow-hidden bg-background">
       {/* Abstract Background Shapes - More blended & slower */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-primary/5 rounded-full blur-[150px] -translate-y-1/2 translate-x-1/2 mix-blend-multiply opacity-30 animate-pulse duration-[10000ms]" />
-        <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-secondary/5 rounded-full blur-[130px] translate-y-1/2 -translate-x-1/4 mix-blend-multiply opacity-30 duration-[12000ms]" />
+        {/* Defer heavy blur effects or use simple opacity */}
+        <div className="absolute top-0 right-0 w-[1000px] h-[1000px] bg-primary/5 rounded-full blur-[150px] -translate-y-1/2 translate-x-1/2 mix-blend-multiply opacity-30 animate-pulse duration-[10000ms]" style={{ contentVisibility: 'auto' }} />
+        <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-secondary/5 rounded-full blur-[130px] translate-y-1/2 -translate-x-1/4 mix-blend-multiply opacity-30 duration-[12000ms]" style={{ contentVisibility: 'auto' }} />
         <div className="absolute top-1/2 left-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.8)_0%,transparent_70%)] pointer-events-none" />
       </div>
 
@@ -81,11 +82,13 @@ export const Hero = () => {
                 fetchPriority="high"
                 decoding="async"
                 className="w-full h-auto drop-shadow-2xl"
+                // Simplified initial animation to reduce main thread work during LCP
                 animate={{ y: [0, -12, 0] }}
                 transition={{
                   repeat: Infinity,
                   duration: 8,
-                  ease: "easeInOut"
+                  ease: "easeInOut",
+                  delay: 2 // Defer the start of the floating animation
                 }}
                 whileHover={{
                   scale: 1.02,

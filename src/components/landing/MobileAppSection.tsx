@@ -10,6 +10,7 @@ import {
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import showcaseVideo from "@/assets/nova_health_showcase_h264.mp4";
+import showcasePoster from "@/assets/nova_app_showcase.png";
 
 interface MobileAppSectionProps {
     onJoinWaitlist?: () => void;
@@ -117,7 +118,8 @@ export const MobileAppSection = ({ onJoinWaitlist }: MobileAppSectionProps) => {
                                 loop
                                 muted
                                 playsInline
-                                preload="metadata"
+                                preload="none"
+                                poster={showcasePoster}
                                 className="relative w-full h-auto drop-shadow-2xl"
                             />
 
