@@ -8,13 +8,25 @@ import {
     Play
 } from "lucide-react";
 import { motion } from "framer-motion";
-import mobileAppShowcase from "@/assets/nova_app_showcase.png";
+import { useEffect, useRef } from "react";
+import showcaseVideo from "@/assets/nova_health_showcase_h264.mp4";
 
 interface MobileAppSectionProps {
     onJoinWaitlist?: () => void;
 }
 
 export const MobileAppSection = ({ onJoinWaitlist }: MobileAppSectionProps) => {
+    const videoRef = useRef<HTMLVideoElement>(null);
+
+    useEffect(() => {
+        if (videoRef.current) {
+            videoRef.current.muted = true;
+            videoRef.current.play().catch((err) => {
+                console.error("Video autoplay failed:", err);
+            });
+        }
+    }, []);
+
     return (
         <section className="relative py-24 md:py-32 bg-white overflow-hidden">
 
@@ -98,10 +110,13 @@ export const MobileAppSection = ({ onJoinWaitlist }: MobileAppSectionProps) => {
                             }}
                             className="relative z-10 w-full max-w-[700px]"
                         >
-                            {/* The Uploaded Showcase Image */}
-                            <img
-                                src={mobileAppShowcase}
-                                alt="Nova Health Mobile App Interface"
+                            {/* The Uploaded Showcase Video */}
+                            <video
+                                ref={videoRef}
+                                src={showcaseVideo}
+                                loop
+                                muted
+                                playsInline
                                 className="relative w-full h-auto drop-shadow-2xl"
                             />
 

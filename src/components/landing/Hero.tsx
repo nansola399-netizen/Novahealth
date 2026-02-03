@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, ShieldCheck, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { UnifiedSearchBar } from "./UnifiedSearchBar";
-import heroVideo from "@/assets/nova_health_showcase_combo.mp4";
+import heroMedical from "@/assets/hero_medical.png";
 
 export const Hero = () => {
   return (
@@ -72,18 +72,21 @@ export const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-200/20 to-teal-200/20 rounded-full blur-[80px] transform scale-90" />
 
             <div className="relative z-10">
-              <motion.video
-                src={heroVideo}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-auto drop-shadow-2xl scale-[1.15]"
+              <motion.img
+                src={heroMedical}
+                alt="Nova Health Doctors"
+                className="w-full h-auto drop-shadow-2xl"
                 animate={{ y: [0, -12, 0] }}
                 transition={{
                   repeat: Infinity,
                   duration: 8,
                   ease: "easeInOut"
+                }}
+                whileHover={{
+                  scale: 1.02,
+                  rotate: 0.5,
+                  filter: "brightness(1.02)",
+                  transition: { duration: 0.5, ease: "easeOut" }
                 }}
               />
             </div>
