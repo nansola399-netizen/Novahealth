@@ -117,6 +117,7 @@ export const MobileAppSection = ({ onJoinWaitlist }: MobileAppSectionProps) => {
                                 loop
                                 muted
                                 playsInline
+                                preload="metadata"
                                 className="relative w-full h-auto drop-shadow-2xl"
                             />
 

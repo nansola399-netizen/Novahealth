@@ -75,6 +75,11 @@ export const Hero = () => {
               <motion.img
                 src={heroMedical}
                 alt="Nova Health Doctors"
+                width={700}
+                height={700}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
                 className="w-full h-auto drop-shadow-2xl"
                 animate={{ y: [0, -12, 0] }}
                 transition={{
