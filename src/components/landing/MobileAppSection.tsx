@@ -36,7 +36,7 @@ export const MobileAppSection = ({ onJoinWaitlist }: MobileAppSectionProps) => {
             <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-teal-50/50 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2" />
 
             <div className="container mx-auto px-6 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                <div className="grid lg:grid-cols-2 gap-10 lg:gap-24 items-center">
 
                     {/* Left Column: Content */}
                     <motion.div
@@ -44,7 +44,6 @@ export const MobileAppSection = ({ onJoinWaitlist }: MobileAppSectionProps) => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="order-2 lg:order-1"
                     >
                         <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full mb-8 border border-blue-100">
                             <Smartphone className="w-4 h-4" />
@@ -96,7 +95,7 @@ export const MobileAppSection = ({ onJoinWaitlist }: MobileAppSectionProps) => {
                     </motion.div>
 
                     {/* Right Column: Animated Image Showcase */}
-                    <div className="relative flex justify-center lg:justify-end perspective-1000 order-1 lg:order-2 mb-10 lg:mb-0">
+                    <div className="relative flex justify-center lg:justify-end perspective-1000 mb-10 lg:mb-0">
                         {/* Subtle Orbit / Float Animation Wrapper */}
                         <motion.div
                             animate={{
