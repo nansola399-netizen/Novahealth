@@ -38,6 +38,11 @@ export const Hero = () => {
               Complete Healthcare.{" "}
               <span className="block text-gradient-premium mt-2 pb-2">One Platform.</span>
             </h1>
+
+            <p className="text-sm md:text-base font-medium text-slate-500 mb-6 max-w-lg mx-auto lg:mx-0 tracking-wide">
+              Trusted healthcare access across India • Verified doctors • 24/7 emergency support
+            </p>
+
             <p className="text-xl text-slate-600 mb-10 max-w-lg mx-auto lg:mx-0 font-normal leading-relaxed tracking-tight">
               Connect with top-rated doctors, book instant ambulances, and manage your health records - all in one secure place.
             </p>
