@@ -34,14 +34,14 @@ export const MobileAppSection = ({ onJoinWaitlist }: MobileAppSectionProps) => {
             {/* Background Gradients */}
             {/* Modern Medical Background Shapes */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                {/* Top Right Organic Curve - Soft Sky Blue */}
-                <div className="absolute top-0 right-0 w-[85%] md:w-[70%] h-[80%] bg-gradient-to-bl from-blue-50/80 to-blue-50/20 rounded-bl-[120px] md:rounded-bl-[200px]" />
+                {/* Top Right Organic Curve - Soft Sky Blue (Increased Visibility) */}
+                <div className="absolute top-0 right-0 w-[90%] md:w-[75%] h-[85%] bg-gradient-to-bl from-blue-100/40 via-blue-50/40 to-transparent rounded-bl-[120px] md:rounded-bl-[200px]" />
 
-                {/* Bottom Left Accent Curve - Calm Teal */}
-                <div className="absolute bottom-0 left-0 w-[60%] md:w-[45%] h-[50%] bg-gradient-to-tr from-teal-50/40 to-transparent rounded-tr-[100px] md:rounded-tr-[180px]" />
+                {/* Bottom Left Accent Curve - Calm Teal (Increased Visibility) */}
+                <div className="absolute bottom-0 left-0 w-[60%] md:w-[45%] h-[50%] bg-gradient-to-tr from-teal-100/30 to-transparent rounded-tr-[100px] md:rounded-tr-[180px]" />
 
                 {/* Subtle Decorative Circle */}
-                <div className="absolute top-[20%] right-[10%] w-64 h-64 bg-blue-100/20 rounded-full blur-3xl" />
+                <div className="absolute top-[20%] right-[10%] w-64 h-64 bg-blue-100/30 rounded-full blur-3xl opacity-60" />
             </div>
 
             <div className="container mx-auto px-6 relative z-10">
