@@ -29,7 +29,7 @@ export const MobileAppSection = ({ onJoinWaitlist }: MobileAppSectionProps) => {
     }, []);
 
     return (
-        <section className="relative py-12 lg:py-20 bg-white overflow-hidden">
+        <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-20 bg-white overflow-hidden">
 
             {/* Background Gradients */}
             <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-50/50 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
