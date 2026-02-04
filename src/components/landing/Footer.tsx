@@ -200,7 +200,7 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-600 font-normal">
             <div className="text-center md:text-left">
               <p>
-                © {new Date().getFullYear()} Nova Health Solutions.
+                © {new Date().getFullYear()} Nova Health Solutions (v1.1)
               </p>
               <p className="text-xs text-slate-400 mt-1">
                 Data Privacy Compliant • Verified Healthcare Providers
