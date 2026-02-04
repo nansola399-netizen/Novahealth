@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Heart, Mail, Phone, MapPin } from "lucide-react";
+import { Heart, Mail, Phone, MapPin, Instagram, Twitter, Facebook } from "lucide-react";
 
 export const Footer = () => {
   const scrollToSection = (href: string) => {
@@ -22,6 +22,37 @@ export const Footer = () => {
             <div className="flex items-center gap-2.5 text-primary font-medium bg-blue-50/50 inline-flex px-4 py-2 rounded-full border border-blue-100/50">
               <Heart className="h-3.5 w-3.5 fill-current" />
               <span className="text-xs tracking-wide">Built for better healthcare</span>
+            </div>
+
+            {/* Social Media Links */}
+            <div className="flex items-center gap-4 pt-2">
+              <a
+                href="https://www.instagram.com/nova_health_solution?igsh=bTlucmJvYzhnODky"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-pink-600 transition-colors duration-300"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href="https://x.com/Nova_Health2026"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-slate-900 transition-colors duration-300"
+                aria-label="Twitter (X)"
+              >
+                <Twitter className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61587005232113"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-slate-400 hover:text-blue-600 transition-colors duration-300"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
             </div>
           </div>
 
