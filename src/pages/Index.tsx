@@ -5,6 +5,7 @@ import { MobileAppSection } from "@/components/landing/MobileAppSection";
 
 // Lazy load below-the-fold components
 const Services = lazy(() => import("@/components/landing/Services").then(module => ({ default: module.Services })));
+const WhyNovaSection = lazy(() => import("@/components/landing/WhyNovaSection").then(module => ({ default: module.WhyNovaSection })));
 const HowItWorks = lazy(() => import("@/components/landing/HowItWorks").then(module => ({ default: module.HowItWorks })));
 const WhyChoose = lazy(() => import("@/components/landing/WhyChoose").then(module => ({ default: module.WhyChoose })));
 const EmergencySection = lazy(() => import("@/components/landing/EmergencySection").then(module => ({ default: module.EmergencySection })));
@@ -27,6 +28,7 @@ const Index = () => {
         <MobileAppSection onJoinWaitlist={() => setEarlyAccessOpen(true)} />
         <Hero />
         <Suspense fallback={<div className="min-h-[200px]" />}>
+          <WhyNovaSection />
           <Services />
           <HowItWorks />
           <WhyChoose />
