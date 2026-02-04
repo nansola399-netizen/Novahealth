@@ -129,26 +129,26 @@ export const Services = () => {
         >
           {services.map((service) => (
             <motion.div key={service.title} variants={itemVariants} className="h-full">
-              <Card className="glass-card glass-card-hover h-full border-0 overflow-hidden flex flex-col rounded-[2.5rem] bg-white/60">
+              <Card className="group h-full border border-slate-100 bg-slate-50/50 overflow-hidden flex flex-col rounded-3xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:bg-white">
                 {/* Visual Header */}
-                <div className={`relative h-64 w-full overflow-hidden ${service.color} opacity-[0.95]`}>
+                <div className={`relative h-56 w-full overflow-hidden ${service.color} opacity-[0.95]`}>
                   {/* Image Background */}
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="absolute inset-0 w-full h-full object-cover opacity-90 transition-all duration-700 hover:scale-105"
+                    className="absolute inset-0 w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-90" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent" />
 
                   {/* Floating Icon Badge - Refined */}
-                  <div className="absolute top-6 right-6 z-20 w-14 h-14 bg-white/95 backdrop-blur-xl rounded-2xl flex items-center justify-center shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-white/40">
-                    <service.icon className="h-6 w-6 text-foreground/80" />
+                  <div className="absolute top-4 right-4 z-20 w-12 h-12 bg-white/90 backdrop-blur rounded-xl flex items-center justify-center shadow-sm transition-transform duration-300 group-hover:scale-105">
+                    <service.icon className="h-5 w-5 text-slate-700" />
                   </div>
                 </div>
 
-                <CardContent className="p-8 text-left flex-grow flex flex-col justify-between relative z-20 -mt-12">
-                  <div className="bg-white/50 backdrop-blur-md p-6 rounded-3xl border border-white/60 shadow-sm">
-                    <h3 className="font-bold text-xl text-foreground mb-3 tracking-tight">
+                <CardContent className="p-6 text-left flex-grow flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-bold text-lg text-slate-900 mb-2 tracking-tight group-hover:text-blue-600 transition-colors">
                       {service.title}
                     </h3>
                     <p className="text-sm text-slate-600 leading-relaxed font-medium">
