@@ -27,7 +27,7 @@ export const Footer = () => {
             {/* Social Media Links */}
             <div className="flex items-center gap-4 pt-2">
               <a
-                href="https://www.instagram.com/nova_health_solution?igsh=bTlucmJvYzhnODky"
+                href="https://www.instagram.com/nova_health_solutions?igsh=bTlucmJvYzhnODky"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 hover:text-pink-600 transition-colors duration-300"
