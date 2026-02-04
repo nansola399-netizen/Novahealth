@@ -167,10 +167,14 @@ export const Footer = () => {
             </span>
           </p>
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-600 font-normal">
-            <p>
-              © {new Date().getFullYear()} Nova Health Solutions. All rights
-              reserved.
-            </p>
+            <div className="text-center md:text-left">
+              <p>
+                © {new Date().getFullYear()} Nova Health Solutions.
+              </p>
+              <p className="text-xs text-slate-400 mt-1">
+                Data Privacy Compliant • Verified Healthcare Providers
+              </p>
+            </div>
             <div className="flex items-center gap-8">
               <span className="hover:text-primary transition-colors cursor-pointer hover:underline underline-offset-4 decoration-primary/30">Privacy</span>
               <Link to="/terms" className="hover:text-primary transition-colors cursor-pointer hover:underline underline-offset-4 decoration-primary/30">Terms</Link>
