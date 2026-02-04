@@ -6,7 +6,7 @@ import heroMedical from "@/assets/hero_medical.png";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[95vh] flex items-center pt-32 pb-20 overflow-hidden bg-background">
+    <section className="relative flex items-center py-12 lg:py-20 overflow-hidden bg-background">
       {/* Abstract Background Shapes - More blended & slower */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Defer heavy blur effects or use simple opacity */}

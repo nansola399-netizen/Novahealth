@@ -99,7 +99,7 @@ const itemVariants = {
 
 export const Services = () => {
   return (
-    <section id="services" className="py-24 relative overflow-hidden bg-background">
+    <section id="services" className="py-12 lg:py-20 relative overflow-hidden bg-background">
       {/* Premium Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-white via-blue-50/20 to-white pointer-events-none" />
 
