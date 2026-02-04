@@ -20,10 +20,13 @@ const features = [
     }
 ];
 
+import { MedicalBackground } from "../ui/MedicalBackground";
+
 export const WhyNovaSection = () => {
     return (
-        <section className="py-12 lg:py-20 bg-white">
-            <div className="container mx-auto px-6">
+        <section className="py-12 lg:py-20 bg-white relative overflow-hidden">
+            <MedicalBackground variant="section-light" />
+            <div className="container mx-auto px-6 relative z-10">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Why Nova Health?</h2>
                 </div>

@@ -41,10 +41,13 @@ const features = [
   },
 ];
 
+import { MedicalBackground } from "../ui/MedicalBackground";
+
 export const WhyChoose = () => {
   return (
-    <section id="about" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-20 bg-muted/30 relative overflow-hidden">
+      <MedicalBackground variant="section-clean" />
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

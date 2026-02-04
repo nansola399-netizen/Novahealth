@@ -28,10 +28,13 @@ const steps = [
   },
 ];
 
+import { MedicalBackground } from "../ui/MedicalBackground";
+
 export const HowItWorks = () => {
   return (
     <section id="how-it-works" className="py-24 bg-white relative overflow-hidden">
-      <div className="container mx-auto px-4">
+      <MedicalBackground variant="section-accent" />
+      <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
