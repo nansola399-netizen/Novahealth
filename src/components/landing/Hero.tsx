@@ -72,7 +72,7 @@ export const Hero = () => {
             initial={{ opacity: 0, scale: 0.95, filter: "blur(10px)" }}
             animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
             transition={{ duration: 1.2, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-            className="relative hidden lg:block"
+            className="relative mt-12 lg:mt-0"
           >
             {/* Subtle glow behind image */}
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-200/20 to-teal-200/20 rounded-full blur-[80px] transform scale-90" />
