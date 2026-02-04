@@ -32,8 +32,17 @@ export const MobileAppSection = ({ onJoinWaitlist }: MobileAppSectionProps) => {
         <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-20 bg-white overflow-hidden">
 
             {/* Background Gradients */}
-            <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-blue-50/50 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
-            <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-teal-50/50 rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2" />
+            {/* Modern Medical Background Shapes */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                {/* Top Right Organic Curve - Soft Sky Blue */}
+                <div className="absolute top-0 right-0 w-[85%] md:w-[70%] h-[80%] bg-gradient-to-bl from-blue-50/80 to-blue-50/20 rounded-bl-[120px] md:rounded-bl-[200px]" />
+
+                {/* Bottom Left Accent Curve - Calm Teal */}
+                <div className="absolute bottom-0 left-0 w-[60%] md:w-[45%] h-[50%] bg-gradient-to-tr from-teal-50/40 to-transparent rounded-tr-[100px] md:rounded-tr-[180px]" />
+
+                {/* Subtle Decorative Circle */}
+                <div className="absolute top-[20%] right-[10%] w-64 h-64 bg-blue-100/20 rounded-full blur-3xl" />
+            </div>
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-10 lg:gap-24 items-center">
