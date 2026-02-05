@@ -15,8 +15,8 @@ export const Footer = () => {
           <div className="space-y-8">
             <h5 className="font-bold text-lg tracking-tight text-slate-900">Nova Health Solutions Pvt Ltd.</h5>
             <p className="text-slate-600 text-sm leading-relaxed max-w-xs font-normal tracking-wide">
-              Nova Health Solutions is an integrated healthcare service
-              marketplace connecting you with verified medical services across
+              Nova Health Solutions is an healthcare service
+              aggregator connecting you with verified medical services across
               India.
             </p>
             <div className="flex items-center gap-2.5 text-primary font-medium bg-blue-50/50 inline-flex px-4 py-2 rounded-full border border-blue-100/50">
@@ -189,9 +189,9 @@ export const Footer = () => {
         {/* Disclaimer & Copyright */}
         <div className="border-t border-slate-200/60 pt-10 mt-10">
           <p className="text-xs text-slate-500 mb-8 leading-relaxed max-w-5xl font-normal tracking-wide">
-            <strong className="text-slate-600 font-medium">Disclaimer:</strong> Nova Health Solutions is a healthcare
-            diagnosis or treatment. All medical services are provided by
-            independent, verified healthcare providers.
+            <strong className="text-slate-600 font-medium">Disclaimer:</strong> Nova Health Solutions is an healthcare
+            aggregator. All medical services are provided by
+            independent, verified healthcare service providers.
             <br className="mt-4 block" />
             <span className="mt-4 block opacity-80">
               Nova Health Solutions Pvt. Ltd. is a registered private limited company operating in India.
@@ -200,10 +200,9 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-600 font-normal">
             <div className="text-center md:text-left">
               <p>
-                © {new Date().getFullYear()} Nova Health Solutions (v1.1)
+                © {new Date().getFullYear()} Nova Health Solutions
               </p>
               <p className="text-xs text-slate-400 mt-1">
-                Data Privacy Compliant • Verified Healthcare Providers
               </p>
             </div>
             <div className="flex items-center gap-8">
