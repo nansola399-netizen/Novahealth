@@ -16,6 +16,7 @@ const Footer = lazy(() => import("@/components/landing/Footer").then(module => (
 const EmergencyModal = lazy(() => import("@/components/landing/EmergencyModal").then(module => ({ default: module.EmergencyModal })));
 const EarlyAccessModal = lazy(() => import("@/components/landing/EarlyAccessModal").then(module => ({ default: module.EarlyAccessModal })));
 const FloatingEmergencyBtn = lazy(() => import("@/components/landing/FloatingEmergencyBtn").then(module => ({ default: module.FloatingEmergencyBtn })));
+const PartnersSection = lazy(() => import("@/components/landing/PartnersSection").then(module => ({ default: module.PartnersSection }))); // [NEW] Partners Section
 
 const Index = () => {
   const [emergencyModalOpen, setEmergencyModalOpen] = useState(false);
@@ -29,6 +30,7 @@ const Index = () => {
         <Hero />
         <Suspense fallback={<div className="min-h-[200px]" />}>
           <WhyNovaSection />
+          <PartnersSection />
           <Services />
           <HowItWorks />
           <WhyChoose />
